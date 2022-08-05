@@ -4,7 +4,7 @@ In our application we'd like to create, read, update and delete WOD's (Workouts 
 
 Our job will require us to design and implement an API for that application.
 
-### Spin up the development server:
+## Spin up the development server:
 
 ```
 npm run dev
