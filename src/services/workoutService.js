@@ -6,8 +6,9 @@ const getAllWorkouts = () => {
   return allWorkouts;
 };
 
-const getOneWorkout = () => {
-  return;
+const getOneWorkout = (workoutId) => {
+  const workout = Workout.getOneWorkout(workoutId);
+  return workout;
 };
 
 const createNewWorkout = (newWorkout) => {
@@ -17,7 +18,6 @@ const createNewWorkout = (newWorkout) => {
     createdAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
     updatedAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
   };
-
   const createdWorkout = Workout.createNewWorkout(workoutToInsert);
   return createdWorkout;
 };
